@@ -5,4 +5,4 @@
 VS Code
 =======
 
-* User Settings JSON :raw-html:`&rarr;` settings.json
+* User Settings JSON :raw-html:`&rArr;` settings.json
