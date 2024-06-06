@@ -1,3 +1,7 @@
+.. |nbsp| unicode:: 0xA0 
+   :trim:
+
+
 About config-os
 ===============
 
@@ -7,7 +11,7 @@ This repository contains configurations about my OS system (Linux, Manjaro).
 
 
 Configurations contained
-------------------------
+########################
 
 * Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Neovim
