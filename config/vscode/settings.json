@@ -1,0 +1,48 @@
+{
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "vscode-icons",
+    "tabnine.experimentalAutoImports": true,
+    "git.confirmSync": false,
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "java.autobuild.enabled": false,
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "go.buildOnSave": "off",
+    "go.lintOnSave": "off",
+    "[go]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        }
+    },
+    "editor.fontFamily": "'fira code', 'fira code', fira code",
+    "editor.fontSize": 14.5,
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "metals.javaHome": "/home/epilif3sotnas/.jabba/jdk/openjdk@1.17.0",
+    "editor.cursorStyle": "block",
+    "workbench.colorTheme": "Carbonfox",
+    "editor.lineNumbers": "relative",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
+}
