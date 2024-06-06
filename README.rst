@@ -1,11 +1,13 @@
-## About config-os
+About config-os
+==============
 
 This repository contains configurations about my OS system (Linux, Manjaro).
 
-&nbsp;
+|nbsp|
 
 
-## Configurations contained
+Configurations contained
+########################
 
 * Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Neovim
@@ -13,9 +15,10 @@ This repository contains configurations about my OS system (Linux, Manjaro).
 * VS Code
 * Manjaro
 
-&nbsp;
+|nbsp|
 
 
-## License
+License
+#######
 
 Licensed under Apache-2.0 license.
