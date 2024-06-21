@@ -2,7 +2,6 @@
    :trim:
 
 
-
 About config-os
 ===============
 
