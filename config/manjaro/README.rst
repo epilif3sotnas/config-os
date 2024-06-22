@@ -156,7 +156,7 @@ There are 3 different updates, Manjaro System, NeoVim, and Oh My Posh.
 Manjaro
 =======
 
-Update is done with the script in `scripts/manjaro` folder.
+Update is done with the script in ``scripts/manjaro`` folder.
 
 NeoVim
 ======
@@ -170,4 +170,4 @@ Commands to update NeoVim:
 Oh My Posh
 ==========
 
-Update is done with the script in `scripts/ohmyposh` folder.
+Update is done with the script in ``scripts/ohmyposh`` folder.
