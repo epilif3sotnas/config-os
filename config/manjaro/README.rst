@@ -111,13 +111,11 @@ AUR Apps
    :align: center
 
    * - App
-     - App Name Manjaro
+     - App Name AUR
    * - Coursier (Scala)
      - coursier
    * - Insomnia
      - insomnia
-   * - DrawIO
-     - drawio-desktop
    * - DrawIO
      - drawio-desktop
    * - Ventoy
@@ -132,8 +130,8 @@ AUR Apps
 |nbsp|
 
 
-AUR Apps
-##################
+Manual Install Apps
+###################
 
 
 .. list-table:: Apps
@@ -142,20 +140,8 @@ AUR Apps
    :align: center
 
    * - App
-     - App Name Manjaro
-   * - Coursier (Scala)
-     - coursier
-   * - Insomnia
-     - insomnia
-   * - DrawIO
-     - drawio-desktop
-   * - DrawIO
-     - drawio-desktop
-   * - Ventoy
-     - ventoy
-   * - Stremio
-     - stremio
-   * - Microsoft Fonts
-     - ttf-ms-fonts
-   * - VS Code
-     - visual-studio-code-bin
+     - App Name
+   * - Lunar Vim
+     - lvim
+   * - Oh My Posh
+     - oh-my-posh
