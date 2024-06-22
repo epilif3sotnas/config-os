@@ -102,6 +102,37 @@ Manjaro Repos Apps
 
 
 AUR Apps
+########
+
+
+.. list-table:: Apps
+   :widths: auto
+   :header-rows: 1
+   :align: center
+
+   * - App
+     - App Name Manjaro
+   * - Coursier (Scala)
+     - coursier
+   * - Insomnia
+     - insomnia
+   * - DrawIO
+     - drawio-desktop
+   * - DrawIO
+     - drawio-desktop
+   * - Ventoy
+     - ventoy
+   * - Stremio
+     - stremio
+   * - Microsoft Fonts
+     - ttf-ms-fonts
+   * - VS Code
+     - visual-studio-code-bin
+
+|nbsp|
+
+
+AUR Apps
 ##################
 
 
@@ -114,3 +145,17 @@ AUR Apps
      - App Name Manjaro
    * - Coursier (Scala)
      - coursier
+   * - Insomnia
+     - insomnia
+   * - DrawIO
+     - drawio-desktop
+   * - DrawIO
+     - drawio-desktop
+   * - Ventoy
+     - ventoy
+   * - Stremio
+     - stremio
+   * - Microsoft Fonts
+     - ttf-ms-fonts
+   * - VS Code
+     - visual-studio-code-bin
