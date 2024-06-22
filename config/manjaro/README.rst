@@ -163,9 +163,9 @@ NeoVim
 
 Commands to update NeoVim:
 
-#. :LvimUpdate
-#. <leader>ps
-#. :MasonUpdateAll
+* :LvimUpdate
+* <leader>ps
+* :MasonUpdateAll
 
 Oh My Posh
 ==========
