@@ -7,12 +7,13 @@ Manjaro
 
 This README file contains the apps that are needed to install in Manjaro OS. There is three types of apps, one that are on Manjaro repositories, AUR repository, and then the manually installed apps.
 
+This README also contains the steps needed to update the Manjaro OS.
+
 |nbsp|
 
 
 Manjaro Repos Apps
 ##################
-
 
 .. list-table:: Apps
    :widths: auto
@@ -104,7 +105,6 @@ Manjaro Repos Apps
 AUR Apps
 ########
 
-
 .. list-table:: Apps
    :widths: auto
    :header-rows: 1
@@ -133,7 +133,6 @@ AUR Apps
 Manual Install Apps
 ###################
 
-
 .. list-table:: Apps
    :widths: auto
    :header-rows: 1
@@ -145,3 +144,30 @@ Manual Install Apps
      - lvim
    * - Oh My Posh
      - oh-my-posh
+
+|nbsp|
+
+
+Update
+######
+
+There are 3 different updates, Manjaro System, NeoVim, and Oh My Posh.
+
+Manjaro
+=======
+
+Update is done with the script in manjaro folder.
+
+NeoVim
+======
+
+Commands to update NeoVim:
+
+#. :LvimUpdate
+#. <leader>ps
+#. :MasonUpdateAll
+
+Oh My Posh
+==========
+
+Update is done with the script in ohmyposh folder.
