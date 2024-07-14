@@ -1,4 +1,4 @@
-.. |nbsp| unicode:: 0xA0 
+.. |nbsp| unicode:: 0xA0
    :trim:
 
 
@@ -98,6 +98,8 @@ Manjaro Repos Apps
      - xclip
    * - Base Development
      - base-devel
+   * - Tmux
+     - tmux
 
 |nbsp|
 
@@ -157,15 +159,6 @@ Manjaro
 =======
 
 Update is done with the script in ``scripts/manjaro`` folder.
-
-NeoVim
-======
-
-Commands to update NeoVim:
-
-* :LvimUpdate
-* <leader>ps
-* :MasonUpdateAll
 
 Oh My Posh
 ==========
