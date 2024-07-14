@@ -1,4 +1,4 @@
-.. |nbsp| unicode:: 0xA0 
+.. |nbsp| unicode:: 0xA0
    :trim:
 
 
@@ -14,8 +14,8 @@ Configurations contained
 ########################
 
 * Gnome (Extensions, Custom Shortcuts, Workspaces)
-* Neovim
-* Terminal (Shell, Oh My Posh, tmux)
+* Zed
+* Terminal (Shell, Oh My Posh)
 * VS Code
 * Manjaro
 
