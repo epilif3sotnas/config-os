@@ -90,16 +90,14 @@ Manjaro Repos Apps
      - gnome-font-viewer
    * - Foliate
      - foliate
-   * - NeoVim
-     - neovim
    * - RIPGREP
      - ripgrep
    * - XClip
      - xclip
    * - Base Development
      - base-devel
-   * - Tmux
-     - tmux
+   * - Zed
+     - zed
 
 |nbsp|
 
@@ -142,8 +140,6 @@ Manual Install Apps
 
    * - App
      - App Name
-   * - Lunar Vim
-     - lvim
    * - Oh My Posh
      - oh-my-posh
 
@@ -153,7 +149,7 @@ Manual Install Apps
 Update
 ######
 
-There are 3 different updates, Manjaro System, NeoVim, and Oh My Posh.
+There are 2 different updates, Manjaro System, and Oh My Posh.
 
 Manjaro
 =======

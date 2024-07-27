@@ -1,0 +1,111 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  // Basic Configs
+  "base_keymap": "Atom",
+  "theme": "Andromeda",
+  "vim_mode": true,
+  "auto_update": false,
+
+  // Editor UI Overall
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "relative_line_numbers": true,
+
+  // Editor UX
+  "format_on_save": "off",
+  "ensure_final_newline_on_save": false,
+
+  // Project Panel
+  "project_panel": {
+    "button": false,
+    "dock": "right"
+  },
+
+  // Scrollbar
+  "scrollbar": {
+    "show": "never"
+  },
+
+  // Tab Bar
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
+
+  // Tab
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+
+  // Toolbar
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+
+  // Bottom bar
+  "assistant": {
+    "version": "1",
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+
+  // Copilot
+  "features": {
+    "copilot": false
+  },
+
+  // Inlay Hints
+  "inlay_hints": {
+    "enabled": true
+  },
+
+  // Terminal
+  "terminal": {
+    "button": false,
+    "toolbar": {
+      "title": false
+    }
+  },
+
+  // LSP
+  "lsp": {
+    "terraform-ls": {
+      "initialization_options": {
+        "experimentalFeatures": {
+          "prefillRequiredFields": true
+        }
+      }
+    },
+    "metals": {
+      "settings": {
+        "inlayHints": {
+          "inferredTypes": {
+            "enable": true
+          }
+        }
+      }
+    }
+  },
+
+  // Programming Languages
+  "languages": {
+    "Go": {
+      "code_actions_on_format": {
+        "source.organizeImports": false
+      }
+    }
+  }
+}
