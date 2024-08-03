@@ -27,3 +27,22 @@ zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 
 autoload -Uz compinit && compini
+
+# Git Commit Abbreviation
+
+gc() {
+    if [ ! -d "./.git" ]; then
+        echo "Command Failed -> Current directory is not a git repository.";
+        return 2;
+    fi
+
+    if [ -z "$1" ]; then
+        echo "Command Failed -> Please insert a message to commit.";
+        return 2;
+    fi
+
+    git rm -r --cached .;
+    git add .;
+    git commit -m "$1";
+    return 0;
+}
