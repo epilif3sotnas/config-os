@@ -1,4 +1,5 @@
 Zed
+
 ===
 
 Zed IDE configurations are in the following files:

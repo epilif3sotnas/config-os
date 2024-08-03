@@ -42,8 +42,10 @@
       "space /": "editor::ToggleComments",
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
+      "space l l": "editor::GoToDiagnostic",
+      "space l h": "editor::GoToPrevDiagnostic",
 
-      "space f": "file_finder::Toggle",
+      "space f": "file_finder::Toggle"
     }
   },
 
