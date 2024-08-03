@@ -1,0 +1,68 @@
+// My custon keybindings
+
+[
+  {
+    "bindings": {
+      "alt-Q": "zed::Quit",
+      "ctrl-M": "zed::Minimize"
+    }
+  },
+
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-k": "editor::MoveLineUp",
+      "alt-j": "editor::MoveLineDown"
+    }
+  },
+
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-\\": "workspace::ToggleBottomDock",
+      "alt-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "alt-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "alt-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "alt-shift-j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space F": "pane::DeploySearch",
+      "space c": "pane::CloseActiveItem",
+      "space b h": "pane::CloseItemsToTheLeft",
+      "space b l": "pane::CloseItemsToTheRight",
+      "space b b": "pane::ActivatePrevItem",
+      "space b n": "pane::ActivateNextItem",
+
+      "space e": "workspace::ToggleRightDock",
+
+      "space /": "editor::ToggleComments",
+      "space l a": "editor::ToggleCodeActions",
+      "space l f": "editor::Format",
+
+      "space f": "file_finder::Toggle",
+    }
+  },
+
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space e": "workspace::ToggleRightDock",
+
+      "a d": "project_panel::NewDirectory",
+      "a f": "project_panel::NewFile",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "y": "project_panel::Copy",
+      "Y": "project_panel::CopyPath",
+      "x": "project_panel::Cut",
+      "p": "project_panel::Paste",
+      "o": "project_panel::Open",
+
+      "space f": "file_finder::Toggle"
+    }
+  }
+]
