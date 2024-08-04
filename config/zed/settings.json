@@ -28,6 +28,11 @@
     "dock": "right"
   },
 
+  // Outline Panel
+  "outline_panel": {
+    "button": false
+  },
+
   // Scrollbar
   "scrollbar": {
     "show": "never"
