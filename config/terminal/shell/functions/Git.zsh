@@ -1,6 +1,6 @@
 # Remove cached | Add | Commit
 gc() {
-    _is_git
+    _is_git || return $?
 
     if [ -z "$1" ]; then
         echo "Command Failed -> Please insert a message to commit.";
@@ -15,7 +15,7 @@ gc() {
 
 # Push
 gpisha() {
-    _is_git
+    _is_git || return $?
 
     git push origin $(git branch --show-current);
     return 0;
@@ -23,7 +23,7 @@ gpisha() {
 
 # Remove Branch locally
 gd() {
-    _is_git
+    _is_git || return $?
 
     git branch -D "$@";
     return 0;
@@ -32,7 +32,7 @@ compdef _branch gd
 
 # Remove Branch remotely
 grd() {
-    _is_git
+    _is_git || return $?
 
     git push origin -d "$@";
     return 0;
@@ -41,7 +41,7 @@ compdef _branch grd
 
 # Sync Remote Branches
 gsb() {
-    _is_git
+    _is_git || return $?
 
     git fetch origin --prune;
     return 0;
@@ -49,7 +49,7 @@ gsb() {
 
 # Checkout branch
 gcb() {
-    _is_git
+    _is_git || return $?
 
     git checkout "$@";
     return 0;
@@ -58,7 +58,7 @@ compdef _branch gcb
 
 # Checkout and Create Branch
 gcab() {
-    _is_git
+    _is_git || return $?
 
     git checkout -b "$@";
     return 0;
@@ -67,7 +67,7 @@ compdef _branch gcab
 
 # Merge branch
 gm() {
-    _is_git
+    _is_git || return $?
 
     git merge "$@";
     return 0;
@@ -76,7 +76,7 @@ compdef _branch gm
 
 # Pull from Remote
 gpr() {
-    _is_git
+    _is_git || return $?
 
     git pull origin "$@";
     return 0;
@@ -85,7 +85,7 @@ compdef _branch gpr
 
 # Reset Branch
 grb() {
-    _is_git
+    _is_git || return $?
 
     git reset --hard HEAD;
     return 0;
@@ -93,7 +93,7 @@ grb() {
 
 # Get all branches
 gab() {
-    _is_git
+    _is_git || return $?
 
     git branch -a;
     return 0;
