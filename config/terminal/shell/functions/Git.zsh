@@ -60,10 +60,9 @@ compdef _branch gcb
 gcab() {
     _is_git || return $?
 
-    git checkout -b "$@";
+    git checkout -b "$1";
     return 0;
 }
-compdef _branch gcab
 
 # Merge branch
 gm() {
