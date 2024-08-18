@@ -1,9 +1,6 @@
 # Remove cached | Add | Commit
 gc() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     if [ -z "$1" ]; then
         echo "Command Failed -> Please insert a message to commit.";
@@ -18,10 +15,7 @@ gc() {
 
 # Push
 gpisha() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git push origin $(git branch --show-current);
     return 0;
@@ -29,10 +23,7 @@ gpisha() {
 
 # Remove Branch locally
 gd() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git branch -D "$@";
     return 0;
@@ -41,10 +32,7 @@ compdef _branch gd
 
 # Remove Branch remotely
 grd() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git push origin -d "$@";
     return 0;
@@ -53,10 +41,7 @@ compdef _branch grd
 
 # Sync Remote Branches
 gsb() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git fetch origin --prune;
     return 0;
@@ -64,10 +49,7 @@ gsb() {
 
 # Checkout branch
 gcb() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git checkout "$@";
     return 0;
@@ -76,10 +58,7 @@ compdef _branch gcb
 
 # Checkout and Create Branch
 gcab() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git checkout -b "$@";
     return 0;
@@ -88,10 +67,7 @@ compdef _branch gcab
 
 # Merge branch
 gm() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git merge "$@";
     return 0;
@@ -100,10 +76,7 @@ compdef _branch gm
 
 # Pull from Remote
 gpr() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git pull origin "$@";
     return 0;
@@ -112,10 +85,7 @@ compdef _branch gpr
 
 # Reset Branch
 grb() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git reset --hard HEAD;
     return 0;
@@ -123,10 +93,7 @@ grb() {
 
 # Get all branches
 gab() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
+    _is_git
 
     git branch -a;
     return 0;
@@ -134,6 +101,13 @@ gab() {
 
 
 # Auxiliar Functions - Autocomplete
+
+_is_git() {
+    if [ ! -d "./.git" ]; then
+        echo "Command Failed -> Current directory is not a git repository.";
+        return 2;
+    fi
+}
 
 _branch() {
   local cur prev opts
