@@ -26,56 +26,9 @@ source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 
-autoload -Uz compinit && compini
+autoload -Uz compinit
+compinit
 
 
-# Git Shortcut Commands
-
-# Remove cached | Add | Commit
-gc() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
-
-    if [ -z "$1" ]; then
-        echo "Command Failed -> Please insert a message to commit.";
-        return 2;
-    fi
-
-    git rm -r --cached .;
-    git add .;
-    git commit -m "$1";
-    return 0;
-}
-
-# Push
-gpisha() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
-
-    git push origin $(git branch --show-current);
-    return 0;
-}
-
-# Remove Branch locally
-gd() {
-
-}
-# Remove Branch remotely
-grd() {
-
-}
-
-# Sync Remote Branches
-gsb() {
-    if [ ! -d "./.git" ]; then
-        echo "Command Failed -> Current directory is not a git repository.";
-        return 2;
-    fi
-
-    git fetch origin --prune;
-    return 0;
-}
+# Git Custom Commands
+source $HOME/.zsh/functions/Git.zsh
