@@ -115,5 +115,5 @@ _branch() {
   prev="${COMP_WORDS[COMP_CWORD-1]}"
   opts=$(git branch --format='%(refname:short)')
 
-  compadd -Q "$opts"
+  compadd -Q -- $opts $cur
 }
