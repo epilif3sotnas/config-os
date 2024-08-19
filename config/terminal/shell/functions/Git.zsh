@@ -2,7 +2,7 @@
 gc() {
     _is_git || return $?
 
-    _message $1 "Please insert a message to commit" || return $?
+    _message "$1" "Please insert a message to commit" || return $?
 
     git rm -r --cached .;
     git add .;
@@ -99,9 +99,9 @@ gab() {
 gat() {
     _is_git || return $?
 
-    _message $1 "Please insert a tag name" || return $?
+    _message "$1" "Please insert a tag name" || return $?
 
-    git tag $1;
+    git tag "$1";
     return 0;
 }
 
@@ -119,6 +119,23 @@ gpishat() {
     _is_git || return $?
 
     git push origin --tags;
+    return 0;
+}
+
+# Remove remote tag
+gdrt() {
+    _is_git || return $?
+
+    git push origin -d "$@";
+    return 0;
+}
+compdef _tag gdrt
+
+# Get All Tags
+gt() {
+    _is_git || return $?
+
+    git tag;
     return 0;
 }
 
