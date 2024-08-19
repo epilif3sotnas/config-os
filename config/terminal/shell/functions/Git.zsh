@@ -112,10 +112,10 @@ gdt() {
     git tag -d "$@";
     return 0;
 }
-compdef _branch gdt
+compdef _tag gdt
 
 # Push tags
-gpisha() {
+gpishat() {
     _is_git || return $?
 
     git push origin --tags;
@@ -144,7 +144,17 @@ _branch() {
   COMPREPLY=()
   cur="${COMP_WORDS[COMP_CWORD]}"
   prev="${COMP_WORDS[COMP_CWORD-1]}"
-  opts=$(git branch --format='%(refname:short)')
+  opts=($(git branch --format='%(refname:short)'))
+
+  compadd -Q -- $opts $cur
+}
+
+_tag() {
+  local cur prev opts
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  prev="${COMP_WORDS[COMP_CWORD-1]}"
+  opts=($(git tag))
 
   compadd -Q -- $opts $cur
 }
