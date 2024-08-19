@@ -2,10 +2,7 @@
 gc() {
     _is_git || return $?
 
-    if [ -z "$1" ]; then
-        echo "Command Failed -> Please insert a message to commit.";
-        return 2;
-    fi
+    _message $1 "Please insert a message to commit" || return $?
 
     git rm -r --cached .;
     git add .;
@@ -22,22 +19,22 @@ gpisha() {
 }
 
 # Remove Branch locally
-gd() {
+gdb() {
     _is_git || return $?
 
     git branch -D "$@";
     return 0;
 }
-compdef _branch gd
+compdef _branch gdb
 
 # Remove Branch remotely
-grd() {
+grdb() {
     _is_git || return $?
 
     git push origin -d "$@";
     return 0;
 }
-compdef _branch grd
+compdef _branch grdb
 
 # Sync Remote Branches
 gsb() {
@@ -65,22 +62,22 @@ gcab() {
 }
 
 # Merge branch
-gm() {
+gmb() {
     _is_git || return $?
 
     git merge "$@";
     return 0;
 }
-compdef _branch gm
+compdef _branch gmb
 
 # Pull from Remote
-gpr() {
+gprb() {
     _is_git || return $?
 
     git pull origin "$@";
     return 0;
 }
-compdef _branch gpr
+compdef _branch gprb
 
 # Reset Branch
 grb() {
@@ -98,12 +95,46 @@ gab() {
     return 0;
 }
 
+# Create tag
+gat() {
+    _is_git || return $?
+
+    _message $1 "Please insert a tag name" || return $?
+
+    git tag $1;
+    return 0;
+}
+
+# Delete tag
+gdt() {
+    _is_git || return $?
+
+    git tag -d "$@";
+    return 0;
+}
+compdef _branch gdt
+
+# Push tags
+gpisha() {
+    _is_git || return $?
+
+    git push origin --tags;
+    return 0;
+}
+
 
 # Auxiliar Functions - Autocomplete
 
 _is_git() {
     if [ ! -d "./.git" ]; then
         echo "Command Failed -> Current directory is not a git repository.";
+        return 2;
+    fi
+}
+
+_message() {
+    if [ -z "$1" ]; then
+        echo "Command Failed -> $2.";
         return 2;
     fi
 }
