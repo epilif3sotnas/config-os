@@ -12,4 +12,3 @@ Plugins
 * TOML
 * Zig
 * Terraform
-* Scala
