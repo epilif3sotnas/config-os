@@ -19,7 +19,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-\\": "workspace::ToggleBottomDock",
+      "ctrl-tab": "workspace::ToggleBottomDock",
       "alt-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
       "alt-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
       "alt-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
