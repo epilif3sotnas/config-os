@@ -34,34 +34,16 @@ Manjaro Repos Apps
      - gopls
    * - Go Tools
      - go-tools
-   * - Zig
-     - zig
-   * - Zig Language Server
-     - zls
-   * - Open JDK Java
-     - jdk-openjdk
-   * - Open JDK Java Sources
-     - openjdk-src
-   * - Open JDK Java Docs
-     - openjdk-doc
-   * - Maven
-     - maven
    * - Rust
      - rust
    * - Rust Sources
      - rust-src
    * - Rust Analyzer
      - rust-analyzer
-   * - Python
-     - python
-   * - Python Pip
-     - python-pip
-   * - Python Pipenv
-     - python-pipenv
-   * - Python PyLint
-     - python-pylint
-   * - PyRight
-     - pyright
+   * - Zig
+     - zig
+   * - Zig Language Server
+     - zls
    * - Git
      - git
    * - Docker
