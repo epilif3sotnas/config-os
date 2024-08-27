@@ -94,8 +94,6 @@ AUR Apps
 
    * - App
      - App Name AUR
-   * - Coursier (Scala)
-     - coursier
    * - Insomnia
      - insomnia
    * - DrawIO
@@ -142,3 +140,8 @@ Oh My Posh
 ==========
 
 Update is done with the script in ``scripts/ohmyposh`` folder.
+
+Zed Extensions
+==============
+
+Update Zed extensions manually.
