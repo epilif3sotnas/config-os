@@ -9,6 +9,9 @@ Zed IDE configurations are in the following files:
 Plugins
 
 * HTML
+* Dockerfile
 * TOML
 * Zig
 * Terraform
+* Docker Compose
+* reST
