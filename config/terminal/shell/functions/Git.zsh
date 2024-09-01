@@ -14,7 +14,7 @@ gc() {
 gpisha() {
     _is_git || return $?
 
-    git push origin $(git branch --show-current);
+    git push origin;
     return 0;
 }
 
@@ -74,10 +74,9 @@ compdef _branch gmb
 gprb() {
     _is_git || return $?
 
-    git pull origin "$@";
+    git pull origin;
     return 0;
 }
-compdef _branch gprb
 
 # Reset Branch
 grb() {
