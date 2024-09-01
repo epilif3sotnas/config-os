@@ -66,8 +66,8 @@ Manjaro Repos Apps
      - gthumb
    * - IP Utils
      - iputils
-   * - Vim
-     - vim
+   * - Neovim
+     - neovim
    * - Gnome Font Viewer
      - gnome-font-viewer
    * - Foliate
