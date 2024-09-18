@@ -77,7 +77,7 @@ grb() {
     git branch -D "$@";
     return 0;
 }
-compdef _branch gdb
+compdef _branch grb
 
 # Remove Branch remotely
 grrb() {
@@ -86,7 +86,7 @@ grrb() {
     git push origin -d "$@";
     return 0;
 }
-compdef _branch grdb
+compdef _branch grrb
 
 # Checkout branch
 gcb() {
@@ -155,7 +155,7 @@ grt() {
     git tag -d "$@";
     return 0;
 }
-compdef _tag gdt
+compdef _tag grt
 
 # Push tags
 gpishat() {
@@ -178,7 +178,7 @@ grrt() {
     git push origin -d "$@";
     return 0;
 }
-compdef _tag gdrt
+compdef _tag grrt
 
 # Get All Tags
 gt() {
