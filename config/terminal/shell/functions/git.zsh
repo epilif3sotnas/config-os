@@ -161,9 +161,15 @@ compdef _tag gdt
 gpishat() {
     _is_git || return $?
 
-    git push origin --tags;
+    if [ -z "$1" ]; then
+        git push origin --tags;
+    else
+        git push origin "$1";
+    fi
+
     return 0;
 }
+compdef _tag gpishat
 
 # Remove remote tag
 grrt() {
