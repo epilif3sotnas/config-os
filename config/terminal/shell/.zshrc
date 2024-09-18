@@ -31,4 +31,4 @@ compinit
 
 
 # Git Custom Commands
-source $HOME/.zsh/functions/Git.zsh
+source $HOME/.zsh/functions/git.zsh

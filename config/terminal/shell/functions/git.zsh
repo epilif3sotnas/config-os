@@ -1,3 +1,55 @@
+# Config
+gconfig() {
+    _is_git || return $?
+
+    git config -l;
+    return 0;
+}
+
+# Init
+ginit() {
+    _is_git || return $?
+
+    git init;
+    return 0;
+}
+
+# Status
+gstatus() {
+    _is_git || return $?
+
+    git status;
+    return 0;
+}
+
+# Clone
+gclone() {
+    _is_git || return $?
+
+    _message "$1" "Please a URL to clone." || return $?
+
+    git clone "$1";
+    return 0;
+}
+
+# Graph
+ggraph() {
+    _is_git || return $?
+
+    git log --graph --oneline --all;
+    return 0;
+}
+
+# Rebase
+grebase() {
+    _is_git || return $?
+
+    _message "$1" "Please insert a branch to rebase." || return $?
+
+    git rebase "$1";
+    return 0;
+}
+
 # Remove cached | Add | Commit
 gc() {
     _is_git || return $?
@@ -10,16 +62,16 @@ gc() {
     return 0;
 }
 
-# Push
+# Push Branch
 gpisha() {
     _is_git || return $?
 
-    git push origin;
+    git push origin $(git branch --show-current);
     return 0;
 }
 
 # Remove Branch locally
-gdb() {
+grb() {
     _is_git || return $?
 
     git branch -D "$@";
@@ -28,21 +80,13 @@ gdb() {
 compdef _branch gdb
 
 # Remove Branch remotely
-grdb() {
+grrb() {
     _is_git || return $?
 
     git push origin -d "$@";
     return 0;
 }
 compdef _branch grdb
-
-# Sync Remote Branches
-gsb() {
-    _is_git || return $?
-
-    git fetch origin --prune;
-    return 0;
-}
 
 # Checkout branch
 gcb() {
@@ -53,8 +97,8 @@ gcb() {
 }
 compdef _branch gcb
 
-# Checkout and Create Branch
-gcab() {
+# Create Branch
+gab() {
     _is_git || return $?
 
     git checkout -b "$1";
@@ -74,12 +118,12 @@ compdef _branch gmb
 gprb() {
     _is_git || return $?
 
-    git pull origin;
+    git pull origin $(git branch --show-current);
     return 0;
 }
 
 # Reset Branch
-grb() {
+gresetb() {
     _is_git || return $?
 
     git reset --hard HEAD;
@@ -104,8 +148,8 @@ gat() {
     return 0;
 }
 
-# Delete tag
-gdt() {
+# Remove tag
+grt() {
     _is_git || return $?
 
     git tag -d "$@";
@@ -122,7 +166,7 @@ gpishat() {
 }
 
 # Remove remote tag
-gdrt() {
+grrt() {
     _is_git || return $?
 
     git push origin -d "$@";
@@ -135,6 +179,14 @@ gt() {
     _is_git || return $?
 
     git tag;
+    return 0;
+}
+
+# Sync
+gs() {
+    _is_git || return $?
+
+    git remote prune origin;
     return 0;
 }
 
