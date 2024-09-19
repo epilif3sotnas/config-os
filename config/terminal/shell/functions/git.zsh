@@ -131,7 +131,7 @@ gresetb() {
 }
 
 # Get all branches
-gab() {
+gb() {
     _is_git || return $?
 
     git branch -a;
