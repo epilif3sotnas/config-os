@@ -17,6 +17,11 @@
   "ui_font_size": 15,
   "buffer_font_size": 15,
   "relative_line_numbers": true,
+  "gutter": {
+    "code_actions": false,
+    "runnables": false,
+    "folds": false
+  },
 
   // Editor UX
   "format_on_save": "off",
