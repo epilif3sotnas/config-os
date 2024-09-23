@@ -34,12 +34,6 @@ Manjaro Repos Apps
      - gopls
    * - Go Tools
      - go-tools
-   * - Rust
-     - rust
-   * - Rust Sources
-     - rust-src
-   * - Rust Analyzer
-     - rust-analyzer
    * - Zig
      - zig
    * - Zig Language Server
