@@ -12,7 +12,8 @@
     "context": "Editor",
     "bindings": {
       "alt-k": "editor::MoveLineUp",
-      "alt-j": "editor::MoveLineDown"
+      "alt-j": "editor::MoveLineDown",
+      "ctrl-r": "vim::Redo"
     }
   },
 
