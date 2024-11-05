@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo oh-my-posh upgrade
+sudo oh-my-posh upgrade --force
