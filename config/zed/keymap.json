@@ -3,8 +3,12 @@
 [
   {
     "bindings": {
-      "alt-Q": "zed::Quit",
-      "ctrl-M": "zed::Minimize"
+      "space p r": "projects::OpenRecent",
+
+      "ctrl-shift-s": "zed::OpenSettings",
+      "ctrl-shift-k": "zed::OpenKeymap",
+      "ctrl-shift-m": "zed::Minimize",
+      "ctrl-shift-q": "zed::Quit"
     }
   },
 
@@ -13,6 +17,12 @@
     "bindings": {
       "alt-k": "editor::MoveLineUp",
       "alt-j": "editor::MoveLineDown",
+
+      "space shift-h": "pane::SplitLeft",
+      "space shift-j": "pane::SplitDown",
+      "space shift-k": "pane::SplitUp",
+      "space shift-l": "pane::SplitRight",
+
       "ctrl-r": "vim::Redo"
     }
   },
@@ -20,11 +30,22 @@
   {
     "context": "Workspace",
     "bindings": {
+      "space p o": "workspace::Open",
+      "space p w": "workspace::NewWindow",
+      "space p c": "workspace::CloseWindow",
+      "space e": "workspace::ToggleRightDock",
+      "space q": "workspace::ToggleLeftDock",
       "ctrl-tab": "workspace::ToggleBottomDock",
       "alt-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
       "alt-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
       "alt-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "alt-shift-j": ["workspace::ActivatePaneInDirection", "Down"]
+      "alt-shift-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "space z": "workspace::ToggleZoom",
+
+      "space f": "file_finder::Toggle",
+
+      "space p f": "project_panel::ToggleFocus",
+      "space p t": "terminal_panel::ToggleFocus"
     }
   },
 
@@ -37,24 +58,21 @@
       "space b l": "pane::CloseItemsToTheRight",
       "space b b": "pane::ActivatePrevItem",
       "space b n": "pane::ActivateNextItem",
-
-      "space e": "workspace::ToggleRightDock",
+      "space b a": "pane::CloseAllItems",
+      "space Q": "pane::GoBack",
+      "space E": "pane::GoForward",
 
       "space /": "editor::ToggleComments",
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
       "space l l": "editor::GoToDiagnostic",
-      "space l h": "editor::GoToPrevDiagnostic",
-
-      "space f": "file_finder::Toggle"
+      "space l h": "editor::GoToPrevDiagnostic"
     }
   },
 
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "space e": "workspace::ToggleRightDock",
-
       "a d": "project_panel::NewDirectory",
       "a f": "project_panel::NewFile",
       "d": "project_panel::Delete",
@@ -63,9 +81,7 @@
       "Y": "project_panel::CopyPath",
       "x": "project_panel::Cut",
       "p": "project_panel::Paste",
-      "o": "project_panel::Open",
-
-      "space f": "file_finder::Toggle"
+      "o": "project_panel::Open"
     }
   }
 ]
