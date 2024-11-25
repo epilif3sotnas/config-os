@@ -3,10 +3,6 @@
 [
   {
     "bindings": {
-      "space p r": "projects::OpenRecent",
-
-      "ctrl-shift-s": "zed::OpenSettings",
-      "ctrl-shift-k": "zed::OpenKeymap",
       "ctrl-shift-m": "zed::Minimize",
       "ctrl-shift-q": "zed::Quit"
     }
@@ -18,31 +14,47 @@
       "alt-k": "editor::MoveLineUp",
       "alt-j": "editor::MoveLineDown",
 
+      "ctrl-r": "vim::Redo"
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
       "space shift-h": "pane::SplitLeft",
       "space shift-j": "pane::SplitDown",
       "space shift-k": "pane::SplitUp",
-      "space shift-l": "pane::SplitRight",
-
-      "ctrl-r": "vim::Redo"
+      "space shift-l": "pane::SplitRight"
     }
   },
 
   {
     "context": "Workspace",
     "bindings": {
+      "ctrl-shift-s": "zed::OpenSettings",
+      "ctrl-shift-k": "zed::OpenKeymap",
+
+      "ctrl-tab": "workspace::ToggleBottomDock",
+      "alt-shift-z": "workspace::ToggleZoom",
+      "alt-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "alt-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "alt-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "alt-shift-j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == normal || ProjectPanel && not_editing",
+    "bindings": {
       "space p o": "workspace::Open",
       "space p w": "workspace::NewWindow",
       "space p c": "workspace::CloseWindow",
       "space e": "workspace::ToggleRightDock",
       "space q": "workspace::ToggleLeftDock",
-      "ctrl-tab": "workspace::ToggleBottomDock",
-      "alt-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "alt-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "alt-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "alt-shift-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "space z": "workspace::ToggleZoom",
 
       "space f": "file_finder::Toggle",
+
+      "space p r": "projects::OpenRecent",
 
       "space p f": "project_panel::ToggleFocus",
       "space p t": "terminal_panel::ToggleFocus"
