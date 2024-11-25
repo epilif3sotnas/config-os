@@ -31,9 +31,6 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-shift-s": "zed::OpenSettings",
-      "ctrl-shift-k": "zed::OpenKeymap",
-
       "ctrl-tab": "workspace::ToggleBottomDock",
       "alt-shift-z": "workspace::ToggleZoom",
       "alt-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
@@ -46,6 +43,9 @@
   {
     "context": "Editor && vim_mode == normal || ProjectPanel && not_editing",
     "bindings": {
+      "space z s": "zed::OpenSettings",
+      "space z k": "zed::OpenKeymap",
+
       "space p o": "workspace::Open",
       "space p w": "workspace::NewWindow",
       "space p c": "workspace::CloseWindow",
