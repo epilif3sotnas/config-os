@@ -45,6 +45,7 @@
     "bindings": {
       "space z s": "zed::OpenSettings",
       "space z k": "zed::OpenKeymap",
+      "space z e": "zed::Extensions",
 
       "space p o": "workspace::Open",
       "space p w": "workspace::NewWindow",
