@@ -64,6 +64,8 @@ Manjaro Repos Apps
      - neovim
    * - Gnome Font Viewer
      - gnome-font-viewer
+   * - Gnome Text Editor
+     - gnome-text-editor
    * - Foliate
      - foliate
    * - RIPGREP
