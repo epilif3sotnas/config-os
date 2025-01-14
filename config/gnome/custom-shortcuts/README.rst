@@ -18,6 +18,8 @@ The shortcuts added or changes are the following:
      - alt-d
    * - Switch to Workspace 4
      - alt-f
+   * - Switch to Workspace 5
+     - alt-g
    * - Open Files
      - ctrl-alt-f
    * - Open Terminal
@@ -26,6 +28,8 @@ The shortcuts added or changes are the following:
      - ctrl-alt-m
    * - Open Browser
      - ctrl-alt-b
+   * - Open IDE
+     - ctrl-alt-i
    * - Night Light ON
      - ctrl-alt-pg down
    * - Night Light OFF
