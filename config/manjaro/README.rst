@@ -76,6 +76,10 @@ Manjaro Repos Apps
      - base-devel
    * - Zed
      - zed
+   * - Kotlin
+     - kotlin
+   * - Emojis
+     - noto-fonts-emoji
 
 |nbsp|
 

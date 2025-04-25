@@ -13,6 +13,7 @@ This repository contains configurations about my OS system (Linux, Manjaro).
 Configurations contained
 ########################
 
+* Vivaldi
 * Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Zed
 * Terminal (Shell, Oh My Posh)
