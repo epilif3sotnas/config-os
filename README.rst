@@ -15,8 +15,8 @@ Configurations contained
 
 * Vivaldi
 * Manjaro
-* Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Terminal (Shell, Oh My Posh)
+* Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Zed
 * VS Code
 

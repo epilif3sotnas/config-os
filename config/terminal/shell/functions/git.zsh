@@ -1,16 +1,53 @@
+# Version
+gv() {
+    git version;
+    return 0;
+}
+
 # Config
 gconfig() {
-    _is_git || return $?
-
     git config -l;
+    return 0;
+}
+
+# Set config
+gsetconfig() {
+    _message "$*" "Please insert the configuration arguments." || return $?
+
+    git config "$*";
+    return 0;
+}
+compdef _git gsetconfig=git-config
+
+# Clone
+gclone() {
+    _message "$1" "Please insert a URL to clone." || return $?
+
+    git clone "$1";
     return 0;
 }
 
 # Init
 ginit() {
+    git init;
+    return 0;
+}
+
+# Remote
+gremote() {
+    _is_git || return $?
+    _message "$*" "Please insert the remote command." || return $?
+
+    git remote "$*";
+    return 0;
+}
+compdef _git gremote=git-remote
+
+# Graph
+ggraph() {
     _is_git || return $?
 
-    git init;
+    git log --graph --oneline --all;
     return 0;
 }
 
@@ -22,80 +59,92 @@ gstatus() {
     return 0;
 }
 
-# Clone
-gclone() {
+# Reflog
+greflog() {
     _is_git || return $?
 
-    _message "$1" "Please a URL to clone." || return $?
-
-    git clone "$1";
+    git reflog;
     return 0;
 }
 
-# Graph
-ggraph() {
+# Blame
+gblame() {
     _is_git || return $?
+    _message "$*" "Please insert blame file." || return $?
 
-    git log --graph --oneline --all;
+    git blame "$*";
     return 0;
 }
+compdef _git gblame=git-blame
+
+# Diff
+gdiff() {
+    _is_git || return $?
+    _message "$*" "Please insert diff information." || return $?
+
+    git diff "$*";
+    return 0;
+}
+compdef _git gdiff=git-diff
+
+# Stash
+gstash() {
+    _is_git || return $?
+    _message "$1" "Please insert stash command." || return $?
+
+    git stash "$1";
+    return 0;
+}
+compdef _git gstash=git-stash
+
+# Bisect
+gbisect() {
+    _is_git || return $?
+    _message "$*" "Please insert bisect information." || return $?
+
+    git bisect "$*";
+    return 0;
+}
+compdef _git gbisect=git-bisect
+
+# Cherry-pick
+gcherrypick() {
+    _is_git || return $?
+    _message "$*" "Please insert cherry pick information." || return $?
+
+    git cherry-pick "$*";
+    return 0;
+}
+compdef _git gcherrypick=git-cherry-pick
+
+# Revert
+grevert() {
+    _is_git || return $?
+    _message "$1" "Please insert the commit SHA to revert to." || return $?
+
+    git revert "$1";
+    return 0;
+}
+compdef _git grevert=git-revert
 
 # Rebase
 grebase() {
     _is_git || return $?
-
     _message "$1" "Please insert a branch to rebase." || return $?
 
     git rebase "$1";
     return 0;
 }
-
-# Remove cached | Add | Commit
-gc() {
-    _is_git || return $?
-
-    _message "$1" "Please insert a message to commit" || return $?
-
-    git rm -r --cached .;
-    git add .;
-    git commit -m "$1";
-    return 0;
-}
-
-# Push Branch
-gpisha() {
-    _is_git || return $?
-
-    git push origin $(git branch --show-current);
-    return 0;
-}
-
-# Remove Branch locally
-grb() {
-    _is_git || return $?
-
-    git branch -D "$@";
-    return 0;
-}
-compdef _branch grb
-
-# Remove Branch remotely
-grrb() {
-    _is_git || return $?
-
-    git push origin -d "$@";
-    return 0;
-}
-compdef _branch grrb
+compdef _git grebase=git-rebase
 
 # Checkout branch
 gcb() {
     _is_git || return $?
 
-    git checkout "$@";
+    git checkout "$1";
     return 0;
 }
-compdef _branch gcb
+compdef _git gcb=git-checkout
 
 # Create Branch
 gab() {
@@ -105,22 +154,14 @@ gab() {
     return 0;
 }
 
-# Merge branch
-gmb() {
+# Remove Branch locally
+grb() {
     _is_git || return $?
 
-    git merge "$@";
+    git branch -D "$1";
     return 0;
 }
-compdef _branch gmb
-
-# Pull from Remote
-gprb() {
-    _is_git || return $?
-
-    git pull origin $(git branch --show-current);
-    return 0;
-}
+compdef _git grb=git-branch
 
 # Reset Branch
 gresetb() {
@@ -152,10 +193,62 @@ gat() {
 grt() {
     _is_git || return $?
 
-    git tag -d "$@";
+    git tag -d "$1";
     return 0;
 }
-compdef _tag grt
+compdef _git grt=git-tag
+
+# Get All Tags
+gt() {
+    _is_git || return $?
+
+    git tag;
+    return 0;
+}
+
+# Remove cached | Add | Commit
+gc() {
+    _is_git || return $?
+    _message "$1" "Please insert a message to commit" || return $?
+
+    git rm -r --cached .;
+    git add .;
+    git commit -m "$1";
+    return 0;
+}
+
+# Sync Origin
+gso() {
+    _is_git || return $?
+
+    git remote prune origin;
+    return 0;
+}
+
+# Sync Upstream
+gsu() {
+    _is_git || return $?
+
+    git remote prune upstream;
+    return 0;
+}
+
+# Merge branch
+gmb() {
+    _is_git || return $?
+
+    git merge "$1";
+    return 0;
+}
+compdef _git gmb=git-merge
+
+# Push Branch
+gpisha() {
+    _is_git || return $?
+
+    git push origin $(git branch --show-current);
+    return 0;
+}
 
 # Push tags
 gpishat() {
@@ -169,32 +262,41 @@ gpishat() {
 
     return 0;
 }
-compdef _tag gpishat
+compdef _git gpishat=git-push
+
+# Pull from Origin
+gpob() {
+    _is_git || return $?
+
+    git pull origin $(git branch --show-current);
+    return 0;
+}
+
+# Pull from Upstream
+gpub() {
+    _is_git || return $?
+
+    git pull upstream $(git branch --show-current);
+    return 0;
+}
+
+# Remove Branch remotely
+grob() {
+    _is_git || return $?
+
+    git push origin -d "$1";
+    return 0;
+}
+compdef _git grob=git-push
 
 # Remove remote tag
-grrt() {
+grot() {
     _is_git || return $?
 
-    git push origin -d "$@";
+    git push origin -d "$1";
     return 0;
 }
-compdef _tag grrt
-
-# Get All Tags
-gt() {
-    _is_git || return $?
-
-    git tag;
-    return 0;
-}
-
-# Sync
-gs() {
-    _is_git || return $?
-
-    git remote prune origin;
-    return 0;
-}
+compdef _git grot=git-push
 
 
 # Auxiliar Functions - Autocomplete
@@ -211,24 +313,4 @@ _message() {
         echo "Command Failed -> $2.";
         return 2;
     fi
-}
-
-_branch() {
-  local cur prev opts
-  COMPREPLY=()
-  cur="${COMP_WORDS[COMP_CWORD]}"
-  prev="${COMP_WORDS[COMP_CWORD-1]}"
-  opts=($(git branch --format='%(refname:short)'))
-
-  compadd -Q -- $opts $cur
-}
-
-_tag() {
-  local cur prev opts
-  COMPREPLY=()
-  cur="${COMP_WORDS[COMP_CWORD]}"
-  prev="${COMP_WORDS[COMP_CWORD-1]}"
-  opts=($(git tag))
-
-  compadd -Q -- $opts $cur
 }
