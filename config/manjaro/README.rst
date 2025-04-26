@@ -24,6 +24,8 @@ Manjaro Repos Apps
      - App Name Manjaro
    * - Vivaldi
      - vivaldi
+   * - Firefox
+     - firefox
    * - DBeaver
      - dbeaver
    * - firewalld
@@ -96,8 +98,6 @@ AUR Apps
      - App Name AUR
    * - Insomnia
      - insomnia
-   * - DrawIO
-     - drawio-desktop
    * - Ventoy
      - ventoy
    * - Stremio

@@ -14,11 +14,11 @@ Configurations contained
 ########################
 
 * Vivaldi
-* Gnome (Extensions, Custom Shortcuts, Workspaces)
-* Zed
-* Terminal (Shell, Oh My Posh)
-* VS Code
 * Manjaro
+* Gnome (Extensions, Custom Shortcuts, Workspaces)
+* Terminal (Shell, Oh My Posh)
+* Zed
+* VS Code
 
 |nbsp|
 
