@@ -20,6 +20,8 @@ The shortcuts added or changes are the following:
      - alt-f
    * - Switch to Workspace 5
      - alt-g
+   * - Switch Windows
+     - alt-tab
    * - Open Files
      - ctrl-alt-f
    * - Open Terminal
