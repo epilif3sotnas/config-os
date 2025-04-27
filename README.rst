@@ -18,7 +18,9 @@ Configurations contained
 * Terminal (Shell, Oh My Posh)
 * Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Zed
+* InteliJ IDEA
 * VS Code
+* Neovim
 
 |nbsp|
 
