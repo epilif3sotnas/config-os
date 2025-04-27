@@ -17,3 +17,4 @@ Plugins
 * Kotlin
 * Proto
 * Zig
+* Dart
