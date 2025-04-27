@@ -24,7 +24,9 @@
       "space shift-h": "pane::SplitLeft",
       "space shift-j": "pane::SplitDown",
       "space shift-k": "pane::SplitUp",
-      "space shift-l": "pane::SplitRight"
+      "space shift-l": "pane::SplitRight",
+
+      "g b": "git::Blame"
     }
   },
 
@@ -33,10 +35,10 @@
     "bindings": {
       "ctrl-tab": "workspace::ToggleBottomDock",
       "alt-shift-z": "workspace::ToggleZoom",
-      "alt-shift-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "alt-shift-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "alt-shift-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "alt-shift-j": ["workspace::ActivatePaneInDirection", "Down"]
+      "alt-shift-h": "workspace::ActivatePaneLeft",
+      "alt-shift-k": "workspace::ActivatePaneUp",
+      "alt-shift-l": "workspace::ActivatePaneRight",
+      "alt-shift-j": "workspace::ActivatePaneDown"
     }
   },
 
@@ -69,7 +71,7 @@
       "space c": "pane::CloseActiveItem",
       "space b h": "pane::CloseItemsToTheLeft",
       "space b l": "pane::CloseItemsToTheRight",
-      "space b b": "pane::ActivatePrevItem",
+      "space b b": "pane::ActivatePreviousItem",
       "space b n": "pane::ActivateNextItem",
       "space b a": "pane::CloseAllItems",
       "space Q": "pane::GoBack",
@@ -79,7 +81,7 @@
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
       "space l l": "editor::GoToDiagnostic",
-      "space l h": "editor::GoToPrevDiagnostic"
+      "space l h": "editor::GoToPreviousDiagnostic"
     }
   },
 
@@ -91,7 +93,7 @@
       "d": "project_panel::Delete",
       "r": "project_panel::Rename",
       "y": "project_panel::Copy",
-      "Y": "project_panel::CopyPath",
+      "Y": "workspace::CopyPath",
       "x": "project_panel::Cut",
       "p": "project_panel::Paste",
       "o": "project_panel::Open"

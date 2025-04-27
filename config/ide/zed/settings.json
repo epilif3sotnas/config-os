@@ -9,12 +9,13 @@
 {
   // Basic Configs
   "base_keymap": "Atom",
-  "theme": "Andromeda",
+  "theme": "XY-Zed",
   "vim_mode": true,
   "auto_update": false,
 
   // Editor UI Overall
   "ui_font_size": 15,
+  "ui_font_family": "Roboto",
   "buffer_font_size": 15,
   "relative_line_numbers": true,
   "gutter": {
@@ -62,11 +63,11 @@
 
   // Bottom bar
   "assistant": {
-    "version": "1",
+    "version": "2",
     "button": false
   },
   "chat_panel": {
-    "button": false
+    "button": "never"
   },
   "collaboration_panel": {
     "button": false
@@ -123,6 +124,18 @@
   "git": {
     "inline_blame": {
       "enabled": false
+    }
+  },
+
+  // Errors inline
+  "diagnostics": {
+    "include_warnings": false,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null
     }
   }
 }
