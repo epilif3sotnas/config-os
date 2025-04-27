@@ -80,6 +80,12 @@ Manjaro Repos Apps
      - zed
    * - Kotlin
      - kotlin
+   * - Java
+     - jdk-openjdk
+   * - Rust
+     - rust
+   * - Dart
+     - dart
    * - Emojis
      - noto-fonts-emoji
 
