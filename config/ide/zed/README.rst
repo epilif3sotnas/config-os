@@ -12,6 +12,7 @@ Plugins
 * Dockerfile
 * TOML
 * Terraform
+* Nginx
 * reST
 * Java
 * Kotlin

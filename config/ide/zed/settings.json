@@ -24,6 +24,11 @@
     "folds": false
   },
 
+  // UI Theme modifications
+  "experimental.theme_overrides": {
+    "editor.active_line_number": "#ffffff"
+  },
+
   // Editor UX
   "format_on_save": "off",
   "ensure_final_newline_on_save": false,

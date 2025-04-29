@@ -112,6 +112,8 @@ AUR Apps
      - ttf-ms-fonts
    * - VS Code
      - visual-studio-code-bin
+   * - InteliJ IDEA Community
+     - intellij-idea-community-edition-jre
 
 |nbsp|
 

@@ -26,6 +26,9 @@
       "space shift-k": "pane::SplitUp",
       "space shift-l": "pane::SplitRight",
 
+      "space j": "editor::AddSelectionBelow",
+      "space k": "editor::AddSelectionAbove",
+
       "g b": "git::Blame"
     }
   },
