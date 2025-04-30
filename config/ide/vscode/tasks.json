@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "label": "Nim: Compilation",
+            "command": "nim",
+            "args": [
+                "cpp",
+                "-g",
+                "--threads:on",
+                "--debugger:native",
+                "-o:target/main",
+                "src/main.nim"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "type": "shell"
+        },
+        {
+            "label": "Nim: Cleanup",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "target"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "type": "shell"
+        }
+    ]
+}

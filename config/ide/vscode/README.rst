@@ -3,8 +3,12 @@ VS Code
 
 VS Code configurations are in the following files:
 
+* ``state.vscdb``
+* ``storage.json``
 * ``settings.json``
 * ``keybindings.json``
+* ``tasks.json``
+* ``snippets/``
 
 Plugins
 
@@ -14,8 +18,7 @@ Plugins
 * Error Lens
 * Even Better TOML
 * Git Graph
-* HTML Boilerplate
-* Intelli Code
+* IntelliCode
 * Nightfox
 * Python
 * reStructuredText
@@ -26,3 +29,11 @@ Plugins
 * Go
 * Markdown All in One
 * Zig
+* VSCode Neovim
+* Dart
+* JSON
+* Kotlin
+* Markdown
+* Protobuf
+* Terraform
+* YAML
