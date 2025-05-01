@@ -18,10 +18,10 @@ Plugins
 * Kotlin
 * Kotlin Multiplatform
 * Java
-* Tabnine
 * Maven
 * Gradle
 * Compose Multiplatform
 * JSON
 * YAML
 * Shell
+* Supermaven
