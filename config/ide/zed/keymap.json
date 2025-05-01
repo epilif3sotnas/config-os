@@ -27,18 +27,16 @@
       "space shift-l": "pane::SplitRight",
 
       "space j": "editor::AddSelectionBelow",
-      "space k": "editor::AddSelectionAbove",
-
-      "g b": "git::Blame"
+      "space k": "editor::AddSelectionAbove"
     }
   },
 
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-tab": "workspace::ToggleBottomDock",
+      "ctrl-\\": "workspace::ToggleBottomDock",
       "alt-shift-z": "workspace::ToggleZoom",
-      "alt-shift-h": "workspace::ActivatePaneLeft",
+      "ctrl-h": "workspace::ActivatePaneLeft",
       "alt-shift-k": "workspace::ActivatePaneUp",
       "alt-shift-l": "workspace::ActivatePaneRight",
       "alt-shift-j": "workspace::ActivatePaneDown"
@@ -58,7 +56,7 @@
       "space e": "workspace::ToggleRightDock",
       "space q": "workspace::ToggleLeftDock",
 
-      "space f": "file_finder::Toggle",
+      "space f f": "file_finder::Toggle",
 
       "space p r": "projects::OpenRecent",
 
@@ -70,36 +68,35 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space F": "pane::DeploySearch",
+      "space f G": "pane::DeploySearch",
       "space c": "pane::CloseActiveItem",
-      "space b h": "pane::CloseItemsToTheLeft",
-      "space b l": "pane::CloseItemsToTheRight",
+      "space b l": "pane::CloseItemsToTheLeft",
+      "space b r": "pane::CloseItemsToTheRight",
       "space b b": "pane::ActivatePreviousItem",
       "space b n": "pane::ActivateNextItem",
       "space b a": "pane::CloseAllItems",
-      "space Q": "pane::GoBack",
-      "space E": "pane::GoForward",
 
       "space /": "editor::ToggleComments",
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
-      "space l l": "editor::GoToDiagnostic",
-      "space l h": "editor::GoToPreviousDiagnostic"
+      "space l j": "editor::GoToDiagnostic",
+      "space l k": "editor::GoToPreviousDiagnostic"
     }
   },
 
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "a d": "project_panel::NewDirectory",
-      "a f": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "a": "project_panel::NewFile",
       "d": "project_panel::Delete",
       "r": "project_panel::Rename",
       "y": "project_panel::Copy",
       "Y": "workspace::CopyPath",
       "x": "project_panel::Cut",
       "p": "project_panel::Paste",
-      "o": "project_panel::Open"
+      "L": "project_panel::Open",
+      "l": "project_panel::OpenPermanent"
     }
   }
 ]

@@ -153,3 +153,8 @@ Zed Extensions
 ==============
 
 Update Zed extensions manually.
+
+AstroNvim
+=========
+
+Update AstroNvim manually.

@@ -25,23 +25,20 @@ map <leader>po <Action>(OpenFile)
 map <leader>pr <Action>($LRU)
 map <leader>pc <Action>(CloseProject)
 
-map <leader>f <Action>(GotoFile)
-map <leader><S-f> <Action>(FindInPath)
+map <leader>ff <Action>(GotoFile)
+map <leader>f<S-g> <Action>(FindInPath)
 
 map <leader>c <Action>(CloseContent)
 map <leader>ba <Action>(CloseAllEditors)
 map <leader>bb <Action>(PreviousTab)
 map <leader>bn <Action>(NextTab)
 
-map <leader><S-q> <Action>(Back)
-map <leader><S-e> <Action>(Forward)
-
 map <leader>/ <Action>(CommentByLineComment)
 
 map <leader>la <Action>(Generate)
 map <leader>lf <Action>(ReformatCode)
-map <leader>lh <Action>(GotoPreviousError)
-map <leader>ll <Action>(GotoNextError)
+map <leader>lk <Action>(GotoPreviousError)
+map <leader>lj <Action>(GotoNextError)
 
 map g<S-i> <Action>(GotoImplementation)
 
@@ -49,11 +46,11 @@ map g<S-a> <Action>(SelectAllOccurrences)
 map gl <Plug>NextWholeOccurrence
 map g<S-l> <Plug>PreviousWholeOccurrence
 
-map <leader>dt <Action>(ToggleLineBreakpoint)
-map <leader>db <Action>(ViewBreakpoints)
+map <leader>db <Action>(ToggleLineBreakpoint)
+map <leader>dl <Action>(ViewBreakpoints)
 map <leader>dc <Action>(Resume)
 map <leader>dq <Action>(Stop)
-map <leader>dl <Action>(Rerun)
+map <leader>dr <Action>(Rerun)
 map <leader>di <Action>(StepInto)
 map <leader>do <Action>(StepOver)
-map <leader>du <Action>(StepOut)
+map <leader>d<S-o> <Action>(StepOut)

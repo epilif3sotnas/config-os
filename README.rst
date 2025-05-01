@@ -19,8 +19,8 @@ Configurations contained
 * Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Zed
 * InteliJ IDEA
-* VS Code
 * Neovim
+* VS Code
 
 |nbsp|
 
