@@ -88,6 +88,10 @@ Manjaro Repos Apps
      - dart
    * - Emojis
      - noto-fonts-emoji
+   * - Fuzzy Finder
+     - fzf
+   * - bat
+     - bat
 
 |nbsp|
 

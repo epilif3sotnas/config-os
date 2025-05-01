@@ -32,3 +32,7 @@ compinit
 
 # Git Custom Commands
 source $HOME/.zsh/functions/git.zsh
+
+# Fuzzy Finder Commands
+alias fzff="fzf --preview 'bat --color=always {}' --style minimal"
+alias fzfd="find . -type d | fzf --style minimal"
