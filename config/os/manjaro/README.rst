@@ -92,6 +92,8 @@ Manjaro Repos Apps
      - fzf
    * - bat
      - bat
+   * - Ghostty
+     - ghostty
 
 |nbsp|
 

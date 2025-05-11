@@ -1,0 +1,50 @@
+# Shel integration
+shell-integration-features = no-cursor
+
+# Font
+font-family = "MesloLGS NF
+font-size = 11
+
+# Theme
+theme = carbonfox
+background-opacity = 0.7
+cursor-style = block
+background = #000000
+foreground = #f8f8f2
+selection-background = #f8f8f2
+cursor-color = #f8f8f2
+selection-invert-fg-bg = true
+
+# Key Bindings
+keybind = f11=toggle_fullscreen
+keybind = ctrl+shift+r=reload_config
+keybind = ctrl+alt+y=scroll_page_lines:-1
+keybind = ctrl+alt+e=scroll_page_lines:1
+keybind = ctrl+alt+u=scroll_page_up
+keybind = ctrl+alt+d=scroll_page_down
+keybind = "ctrl+a>g=scroll_to_top"
+keybind = "ctrl+a>shift+g=scroll_to_bottom"
+
+# Window settings
+window-decoration = true
+window-theme = ghostty
+window-save-state = never
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+
+# Mouse settings
+mouse-hide-while-typing = true
+copy-on-select = false
+
+# App Notifications
+app-notifications = false
+
+# GTK
+gtk-tabs-location = hidden
+gtk-wide-tabs = false
+
+# Update
+auto-update = off
+auto-update-channel = stable

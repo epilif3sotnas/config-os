@@ -15,7 +15,7 @@ Configurations contained
 
 * Vivaldi
 * Manjaro
-* Terminal (Shell, Oh My Posh)
+* Terminal (Shell, Oh My Posh, Ghostty)
 * Gnome (Extensions, Custom Shortcuts, Workspaces)
 * Zed
 * InteliJ IDEA
