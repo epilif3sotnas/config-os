@@ -32,6 +32,9 @@ vim.keymap.set("t", "<A-S-h>", "<C-\\><C-n><C-w>h")
 vim.keymap.set("t", "<A-S-k>", "<C-\\><C-n><C-w>k")
 vim.keymap.set("t", "<A-S-l>", "<C-\\><C-n><C-w>l")
 
+vim.keymap.set("n", "<leader>znt", function() require("snacks.picker").notifications() end, { desc = "Notifications" })
+vim.keymap.set("n", "<leader>znc", function() require("snacks.notifier").hide() end, { desc = "Clear All Notifications" })
+
 return {
   {
     "rebelot/heirline.nvim",

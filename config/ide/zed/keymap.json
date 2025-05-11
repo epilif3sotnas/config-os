@@ -49,6 +49,8 @@
       "space z s": "zed::OpenSettings",
       "space z k": "zed::OpenKeymap",
       "space z e": "zed::Extensions",
+      "space z n t": "notification_panel::ToggleFocus",
+      "space z n c": "workspace::ClearAllNotifications",
 
       "space p o": "workspace::Open",
       "space p w": "workspace::NewWindow",

@@ -46,6 +46,9 @@ map g<S-a> <Action>(SelectAllOccurrences)
 map gl <Plug>NextWholeOccurrence
 map g<S-l> <Plug>PreviousWholeOccurrence
 
+map <leader>znt <Action>(Notifications)
+map <leader>znc <Action>(CloseAllNotifications)
+
 map <leader>db <Action>(ToggleLineBreakpoint)
 map <leader>dl <Action>(ViewBreakpoints)
 map <leader>dc <Action>(Resume)
