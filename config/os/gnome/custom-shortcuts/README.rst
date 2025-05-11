@@ -10,16 +10,6 @@ The shortcuts added or changes are the following:
 
    * - Shortcut Name
      - Shortcut
-   * - Switch to Workspace 1
-     - alt-a
-   * - Switch to Workspace 2
-     - alt-s
-   * - Switch to Workspace 3
-     - alt-d
-   * - Switch to Workspace 4
-     - alt-f
-   * - Switch to Workspace 5
-     - alt-g
    * - Switch Windows
      - alt-tab
    * - Open Files
