@@ -94,6 +94,8 @@ Manjaro Repos Apps
      - bat
    * - Ghostty
      - ghostty
+   * - Xournal
+     - xournal
 
 |nbsp|
 
