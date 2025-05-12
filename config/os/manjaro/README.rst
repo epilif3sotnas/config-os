@@ -96,6 +96,8 @@ Manjaro Repos Apps
      - ghostty
    * - Xournal
      - xournal
+   * - Tmux
+     - tmux
 
 |nbsp|
 

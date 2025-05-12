@@ -1,0 +1,1 @@
+tmuxs() { tmux new-session -A -s mysession }
