@@ -26,3 +26,6 @@ The shortcuts added or changes are the following:
      - ctrl-alt-pg down
    * - Night Light OFF
      - ctrl-alt-pg up
+
+
+Note: Install Gnome-Tweaks to disable Caps Lock.

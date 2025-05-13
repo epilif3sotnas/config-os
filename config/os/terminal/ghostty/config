@@ -1,8 +1,8 @@
-# Shel integration
+# Shell integration
 shell-integration-features = no-cursor
 
 # Font
-font-family = "MesloLGS NF"
+font-family = "MesloLGS NF Mono"
 font-size = 11
 
 # Theme

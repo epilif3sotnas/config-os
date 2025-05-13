@@ -102,6 +102,8 @@ Manjaro Repos Apps
      - tmux
    * - Gnome Tweaks
      - gnome-tweaks
+   * - Gnome Extensions
+     - gnome-extensions
    * - Roboto Font
      - ttf-roboto
    * - Zsh
