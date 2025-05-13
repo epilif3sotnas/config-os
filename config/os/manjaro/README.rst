@@ -86,6 +86,8 @@ Manjaro Repos Apps
      - rust
    * - Dart
      - dart
+   * - Python
+     - python
    * - Emojis
      - noto-fonts-emoji
    * - Fuzzy Finder
@@ -98,6 +100,12 @@ Manjaro Repos Apps
      - xournal
    * - Tmux
      - tmux
+   * - Gnome Tweaks
+     - gnome-tweaks
+   * - Roboto Font
+     - ttf-roboto
+   * - Zsh
+     - zsh
 
 |nbsp|
 
@@ -140,6 +148,22 @@ Manual Install Apps
      - App Name
    * - Oh My Posh
      - oh-my-posh
+
+|nbsp|
+
+
+Font
+####
+
+Font used is ``Roboto``.
+
+|nbsp|
+
+
+Cursor
+######
+
+Cursor used is ``Roboto``.
 
 |nbsp|
 
