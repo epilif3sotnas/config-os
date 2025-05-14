@@ -19,3 +19,9 @@ Plugins
 * Proto
 * Zig
 * Dart
+* Lua
+
+
+Themes
+
+* XY-Zed Theme
