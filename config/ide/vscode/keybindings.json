@@ -257,15 +257,5 @@
         "key": "space",
         "command": "-filesExplorer.openFilePreserveFocus",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
-    },
-    {
-        "key": "ctrl+shift+l",
-        "command": "editor.action.inlineSuggest.acceptNextWord",
-        "when": "inlineSuggestionVisible && !editorReadonly"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "-editor.action.inlineSuggest.acceptNextWord",
-        "when": "inlineSuggestionVisible && !editorReadonly"
     }
 ]
