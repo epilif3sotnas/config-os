@@ -13,7 +13,6 @@ Plugins
 
 * CodeLLDB
 * Extension Pack Java
-* Docker
 * Error Lens
 * Even Better TOML
 * Git Graph
