@@ -22,17 +22,17 @@
     },
     {
         "key": "ctrl+l",
-        "command": "supermaven.acceptInlineSuggestion",
+        "command": "editor.action.inlineSuggest.commit",
         "when": "editorTextFocus && neovim.mode == insert"
       },
       {
         "key": "ctrl+shift+l",
-        "command": "supermaven.acceptWord",
+        "command": "editor.action.inlineSuggest.acceptNextWord",
         "when": "editorTextFocus && neovim.mode == insert"
       },
       {
         "key": "ctrl+h",
-        "command": "supermaven.clearInlineSuggestion",
+        "command": "editor.action.inlineSuggest.hide",
         "when": "editorTextFocus && neovim.mode == insert"
       },
 
@@ -257,5 +257,15 @@
         "key": "space",
         "command": "-filesExplorer.openFilePreserveFocus",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.inlineSuggest.acceptNextWord",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-editor.action.inlineSuggest.acceptNextWord",
+        "when": "inlineSuggestionVisible && !editorReadonly"
     }
 ]
