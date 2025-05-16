@@ -30,7 +30,6 @@ Plugins
 * Dart
 * JSON
 * Kotlin
-* Markdown
 * Protobuf
 * Terraform
 * YAML
