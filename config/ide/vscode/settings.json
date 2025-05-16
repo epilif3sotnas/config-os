@@ -1,11 +1,8 @@
 {
     "workbench.sideBar.location": "right",
-    "workbench.iconTheme": "vscode-icons",
-    "tabnine.experimentalAutoImports": true,
     "git.confirmSync": false,
     "workbench.startupEditor": "none",
     "explorer.confirmDelete": false,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
     "explorer.confirmDragAndDrop": false,
     "terminal.integrated.profiles.linux": {
         "bash": {
@@ -22,7 +19,7 @@
     "java.autobuild.enabled": false,
     "java.configuration.updateBuildConfiguration": "disabled",
     "go.buildOnSave": "off",
-    "go.lintOnSave": "off",
+    "go.lintOnSave": "on",
     "[go]": {
         "editor.formatOnSave": false,
         "editor.codeActionsOnSave": {
@@ -30,19 +27,32 @@
         }
     },
     "editor.fontFamily": "'fira code', 'fira code', fira code",
-    "editor.fontSize": 14.5,
-    "kotlin.languageServer.enabled": false,
-    "kotlin.debugAdapter.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.renderLineHighlight": "none",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.cursorSurroundingLinesStyle": "default",
+    "workbench.reduceMotion": "off",
     "files.watcherExclude": {
         "**/.bloop": true,
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "metals.javaHome": "/home/epilif3sotnas/.jabba/jdk/openjdk@1.17.0",
-    "editor.cursorStyle": "block",
-    "workbench.colorTheme": "Carbonfox",
     "editor.lineNumbers": "relative",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    }
+    },
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Carbonfox",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.tips.enabled": false,
+    "terminal.integrated.ignoreProcessNames": [
+        "oh-my-posh",
+        "bash",
+        "zsh"
+    ],
+    "update.showReleaseNotes": false,
+    "editor.minimap.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false
 }

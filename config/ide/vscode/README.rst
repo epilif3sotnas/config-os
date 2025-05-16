@@ -3,7 +3,6 @@ VS Code
 
 VS Code configurations are in the following files:
 
-* ``state.vscdb``
 * ``storage.json``
 * ``settings.json``
 * ``keybindings.json``
@@ -23,9 +22,8 @@ Plugins
 * Python
 * reStructuredText
 * rust-analyzer
-* Tabnine
+* Supermaven
 * vscode-icons
-* Dev Containers
 * Go
 * Markdown All in One
 * Zig

@@ -36,7 +36,7 @@
     "bindings": {
       "ctrl-\\": "workspace::ToggleBottomDock",
       "alt-shift-z": "workspace::ToggleZoom",
-      "ctrl-h": "workspace::ActivatePaneLeft",
+      "alt-shift-h": "workspace::ActivatePaneLeft",
       "alt-shift-k": "workspace::ActivatePaneUp",
       "alt-shift-l": "workspace::ActivatePaneRight",
       "alt-shift-j": "workspace::ActivatePaneDown"

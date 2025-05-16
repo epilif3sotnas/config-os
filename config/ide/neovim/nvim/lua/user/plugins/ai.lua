@@ -5,8 +5,8 @@ return {
       require("supermaven-nvim").setup {
         keymaps = {
             accept_suggestion = "<C-l>",
-			accept_word = "<C-S-l>",
-			clear_suggestion = "<C-h>",
+    		accept_word = "<C-S-l>",
+    		clear_suggestion = "<C-h>",
         },
         color = {
           suggestion_color = "#808080",
