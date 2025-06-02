@@ -1,4 +1,4 @@
-* Version
+# Version
 gv() {
     git version;
     return 0;
