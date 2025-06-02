@@ -27,7 +27,13 @@
       "space shift-l": "pane::SplitRight",
 
       "space j": "editor::AddSelectionBelow",
-      "space k": "editor::AddSelectionAbove"
+      "space k": "editor::AddSelectionAbove",
+
+      "za": "editor::ToggleFold",
+      "zO": "editor::FoldRecursive",
+      "zC": "editor::UnfoldRecursive",
+      "zR": "editor::FoldAll",
+      "zM": "editor::UnfoldAll"
     }
   },
 

@@ -58,6 +58,12 @@ keymap("n", "gA", "<cmd>lua require('vscode').action('selectAllSearchEditorMatch
 keymap("n", "gl", "<cmd>lua require('vscode').action('editor.action.addSelectionToNextFindMatch')<CR>")
 keymap("n", "gL", "<cmd>lua require('vscode').action('editor.action.addSelectionToPreviousFindMatch')<CR>")
 
+keymap('n', 'za', "<cmd>lua require('vscode').action('editor.toggleFold')<CR>")
+keymap('n', 'zO', "<cmd>lua require('vscode').action('editor.unfoldRecursively')<CR>")
+keymap('n', 'zC', "<cmd>lua require('vscode').action('editor.foldRecursively')<CR>")
+keymap('n', 'zR', "<cmd>lua require('vscode').action('editor.unfoldAll')<CR>")
+keymap('n', 'zM', "<cmd>lua require('vscode').action('editor.foldAll')<CR>")
+
 keymap("n", "<leader>db", "<cmd>lua require('vscode').action('editor.debug.action.toggleBreakpoint')<CR>")
 keymap("n", "<leader>dc", "<cmd>lua require('vscode').action('workbench.action.debug.continue')<CR>")
 keymap("n", "<leader>dq", "<cmd>lua require('vscode').action('workbench.action.debug.stop')<CR>")

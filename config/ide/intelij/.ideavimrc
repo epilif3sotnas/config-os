@@ -49,6 +49,12 @@ map g<S-l> <Plug>PreviousWholeOccurrence
 map <leader>znt <Action>(Notifications)
 map <leader>znc <Action>(CloseAllNotifications)
 
+map za <Action>(EditorToggleFold)
+map zO <Action>(ExpandRegionRecursively)
+map zC <Action>(CollapseRegionRecursively)
+map zR <Action>(ExpandAllRegions)
+map zM <Action>(CollapseAllRegions)
+
 map <leader>db <Action>(ToggleLineBreakpoint)
 map <leader>dl <Action>(ViewBreakpoints)
 map <leader>dc <Action>(Resume)
