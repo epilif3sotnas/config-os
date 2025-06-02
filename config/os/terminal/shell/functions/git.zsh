@@ -1,4 +1,4 @@
-# Version
+* Version
 gv() {
     git version;
     return 0;
@@ -21,17 +21,19 @@ compdef _git gsetconfig=git-config
 
 # Clone
 gclone() {
-    _message "$1" "Please insert a URL to clone." || return $?
+    _message "$*" "Please insert a URL to clone." || return $?
 
-    git clone "$1";
+    git clone --recurse-submodules "$*";
     return 0;
 }
+compdef _git gclone=git-clone
 
 # Init
 ginit() {
-    git init;
+    git init "$*";
     return 0;
 }
+compdef _git ginit=git-init
 
 # Remote
 gremote() {
@@ -58,14 +60,16 @@ gstatus() {
     git status;
     return 0;
 }
+compdef _git gstatus=git-status
 
 # Reflog
 greflog() {
     _is_git || return $?
 
-    git reflog;
+    git reflog "$*";
     return 0;
 }
+compdef _git greflog=git-reflog
 
 # Blame
 gblame() {
@@ -90,9 +94,9 @@ compdef _git gdiff=git-diff
 # Stash
 gstash() {
     _is_git || return $?
-    _message "$1" "Please insert stash command." || return $?
+    _message "$*" "Please insert stash command." || return $?
 
-    git stash "$1";
+    git stash "$*";
     return 0;
 }
 compdef _git gstash=git-stash
@@ -120,9 +124,9 @@ compdef _git gcherrypick=git-cherry-pick
 # Revert
 grevert() {
     _is_git || return $?
-    _message "$1" "Please insert the commit SHA to revert to." || return $?
+    _message "$*" "Please insert the commit SHA to revert to." || return $?
 
-    git revert "$1";
+    git revert "$*";
     return 0;
 }
 compdef _git grevert=git-revert
@@ -130,9 +134,9 @@ compdef _git grevert=git-revert
 # Rebase
 grebase() {
     _is_git || return $?
-    _message "$1" "Please insert a branch to rebase." || return $?
+    _message "$*" "Please insert a branch to rebase." || return $?
 
-    git rebase "$1";
+    git rebase "$*";
     return 0;
 }
 compdef _git grebase=git-rebase
@@ -141,7 +145,7 @@ compdef _git grebase=git-rebase
 gcb() {
     _is_git || return $?
 
-    git checkout "$1";
+    git checkout "$*";
     return 0;
 }
 compdef _git gcb=git-checkout
@@ -150,7 +154,7 @@ compdef _git gcb=git-checkout
 gab() {
     _is_git || return $?
 
-    git checkout -b "$1";
+    git checkout -b "$*";
     return 0;
 }
 
@@ -158,7 +162,7 @@ gab() {
 grb() {
     _is_git || return $?
 
-    git branch -D "$1";
+    git branch -D "$*";
     return 0;
 }
 compdef _git grb=git-branch
@@ -170,6 +174,15 @@ gresetb() {
     git reset --hard HEAD;
     return 0;
 }
+
+# Clean Branch
+gclean() {
+    _is_git || return $?
+
+    git clean "$*";
+    return 0;
+}
+compdef _git gclean=git-clean
 
 # Get all branches
 gb() {
@@ -183,9 +196,9 @@ gb() {
 gat() {
     _is_git || return $?
 
-    _message "$1" "Please insert a tag name" || return $?
+    _message "$*" "Please insert a tag name" || return $?
 
-    git tag "$1";
+    git tag "$*";
     return 0;
 }
 
@@ -193,7 +206,7 @@ gat() {
 grt() {
     _is_git || return $?
 
-    git tag -d "$1";
+    git tag -d "$*";
     return 0;
 }
 compdef _git grt=git-tag
@@ -209,11 +222,11 @@ gt() {
 # Remove cached | Add | Commit
 gc() {
     _is_git || return $?
-    _message "$1" "Please insert a message to commit" || return $?
+    _message "$*" "Please insert a message to commit" || return $?
 
     git rm -r --cached .;
     git add .;
-    git commit -m "$1";
+    git commit -m "$*";
     return 0;
 }
 
@@ -237,7 +250,7 @@ gsu() {
 gmb() {
     _is_git || return $?
 
-    git merge "$1";
+    git merge "$*";
     return 0;
 }
 compdef _git gmb=git-merge
@@ -254,10 +267,10 @@ gpisha() {
 gpishat() {
     _is_git || return $?
 
-    if [ -z "$1" ]; then
+    if [ -z "$*" ]; then
         git push origin --tags;
     else
-        git push origin "$1";
+        git push origin "$*";
     fi
 
     return 0;
@@ -284,7 +297,7 @@ gpub() {
 grob() {
     _is_git || return $?
 
-    git push origin -d "$1";
+    git push origin -d "$*";
     return 0;
 }
 compdef _git grob=git-push
@@ -293,7 +306,7 @@ compdef _git grob=git-push
 grot() {
     _is_git || return $?
 
-    git push origin -d "$1";
+    git push origin -d "$*";
     return 0;
 }
 compdef _git grot=git-push
