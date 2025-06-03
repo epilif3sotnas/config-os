@@ -45,6 +45,16 @@ gremote() {
 }
 compdef _git gremote=git-remote
 
+# Submodule
+gmodule() {
+    _is_git || return $?
+    _message "$*" "Please insert the submodule command." || return $?
+
+    git submodule "$*";
+    return 0;
+}
+compdef _git gmodule=git-submodule
+
 # Graph
 ggraph() {
     _is_git || return $?
