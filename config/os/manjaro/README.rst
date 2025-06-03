@@ -165,7 +165,7 @@ Font used is ``Roboto``.
 Cursor
 ######
 
-Cursor used is ``Roboto``.
+Cursor used is ``Volantes_cursors``.
 
 |nbsp|
 
