@@ -194,6 +194,15 @@ gclean() {
 }
 compdef _git gclean=git-clean
 
+# Restore
+grestore() {
+    _is_git || return $?
+
+    git restore $*;
+    return 0;
+}
+compdef _git grestore=git-restore
+
 # Get all branches
 gb() {
     _is_git || return $?
