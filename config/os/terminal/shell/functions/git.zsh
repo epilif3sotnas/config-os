@@ -286,7 +286,7 @@ compdef _git gmb=git-merge
 gpisha() {
     _is_git || return $?
 
-    git push origin $(git branch --show-current);
+    git push origin $(git branch --show-current) $1;
     return 0;
 }
 
