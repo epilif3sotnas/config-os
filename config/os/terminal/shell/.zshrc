@@ -30,12 +30,7 @@ autoload -Uz compinit
 compinit
 
 
-# Git Custom Commands
+# Custom Commands
 source $HOME/.zsh/functions/git.zsh
-
-# Tmux Custom Commands
 source $HOME/.zsh/functions/tmux.zsh
-
-# Fuzzy Finder Commands
-alias fzff="fzf --preview 'bat --color=always {}' --style minimal"
-alias fzfd="find . -type d | fzf --style minimal"
+source $HOME/.zsh/functions/fzf.zsh
