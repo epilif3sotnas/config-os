@@ -246,6 +246,14 @@ gt() {
     return 0;
 }
 
+# Add
+ga() {
+    _is_git || return $?
+
+    git add .;
+    return 0;
+}
+
 # Remove cached | Add | Commit
 gc() {
     _is_git || return $?
