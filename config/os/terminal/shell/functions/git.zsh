@@ -357,8 +357,7 @@ _message() {
 
 _has_args() {
     if [ -z "$1" ]; then
-        return false;
+        return 0;
     fi
-
-    return true;
+    return 1;
 }
