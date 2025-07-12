@@ -294,6 +294,11 @@ compdef _git gmb=git-merge
 gpisha() {
     _is_git || return $?
 
+    if [ "$1" = "-fwl" ]; then
+        git push origin $(git branch --show-current) --force-with-lease;
+        return 0;
+    fi
+
     git push origin $(git branch --show-current) $1;
     return 0;
 }
