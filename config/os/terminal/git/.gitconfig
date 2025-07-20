@@ -1,0 +1,12 @@
+[browser "vivaldi"]
+	path = /usr/bin/vivaldi
+[core]
+	editor = nvim
+	eol = lf
+	pager = less
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[web]
+	browser = vivaldi
