@@ -333,6 +333,14 @@ gpub() {
     return 0;
 }
 
+# Pull tags from Origin
+gpot() {
+    _is_git || return $?
+
+    git fetch --tags;
+    return 0;
+}
+
 # Remove Branch remotely
 grob() {
     _is_git || return $?
