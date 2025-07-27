@@ -24,6 +24,9 @@ gclone() {
     _message "$*" "Please insert a URL to clone." || return $?
 
     git clone --recurse-submodules $*;
+    cd "$(basename $* .git)";
+    git fetch --tags;
+    cd ..;
     return 0;
 }
 compdef _git gclone=git-clone
