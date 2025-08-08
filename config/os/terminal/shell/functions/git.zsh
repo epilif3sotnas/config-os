@@ -315,6 +315,17 @@ gc() {
     return 0;
 }
 
+# Empty Commit
+gce() {
+    _is_git || return $?
+    _message "$*" "Please insert a message to commit" || return $?
+
+    git rm -r --cached .;
+    git add .;
+    git commit --allow-empty -m $*
+    return 0;
+}
+
 # Sync Origin
 gso() {
     _is_git || return $?
