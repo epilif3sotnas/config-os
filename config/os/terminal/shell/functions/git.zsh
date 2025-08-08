@@ -322,7 +322,16 @@ gce() {
 
     git rm -r --cached .;
     git add .;
-    git commit --allow-empty -m $*
+    git commit --allow-empty -m $*;
+    return 0;
+}
+
+# Change Last Commit Description
+gcm() {
+    _is_git || return $?
+    _message "$*" "Please insert a message to change last commit description" || return $?
+
+    git commit --amend -m $*;
     return 0;
 }
 
