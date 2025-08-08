@@ -58,6 +58,53 @@ gmodule() {
 }
 compdef _git gmodule=git-submodule
 
+# Git Submodule status
+gms() {
+    _is_git || return $?
+
+    git submodule status $*;
+    return 0;
+}
+compdef _git gmodule=git-submodule
+
+# Git Submodule add
+gma() {
+    _is_git || return $?
+    _message "$*" "Please insert the submodule URL." || return $?
+
+    git submodule add $*;
+    return 0;
+}
+compdef _git gmodule=git-submodule
+
+# Git Submodule init
+gmi() {
+    _is_git || return $?
+
+    git submodule init $*;
+    return 0;
+}
+compdef _git gmodule=git-submodule
+
+# Git Submodule deinit
+gmd() {
+    _is_git || return $?
+    _message "$*" "Please insert the submodule path." || return $?
+
+    git submodule deinit -f $*;
+    return 0;
+}
+compdef _git gmodule=git-submodule
+
+# Git Submodule update
+gmu() {
+    _is_git || return $?
+
+    git submodule update --remote --recursive $*;
+    return 0;
+}
+compdef _git gmodule=git-submodule
+
 # Graph
 ggraph() {
     _is_git || return $?
