@@ -20,6 +20,7 @@ Plugins
 * Zig
 * Dart
 * Lua
+* Make
 
 
 Themes
