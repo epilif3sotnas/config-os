@@ -134,8 +134,6 @@ AUR Apps
      - visual-studio-code-bin
    * - InteliJ IDEA Community
      - intellij-idea-community-edition-jre
-   * - V Programming Language
-     - vlang-bin
 
 |nbsp|
 
