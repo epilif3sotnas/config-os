@@ -36,10 +36,6 @@ Manjaro Repos Apps
      - gopls
    * - Go Tools
      - go-tools
-   * - Zig
-     - zig
-   * - Zig Language Server
-     - zls
    * - Git
      - git
    * - Docker
