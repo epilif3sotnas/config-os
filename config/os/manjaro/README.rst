@@ -104,6 +104,8 @@ Manjaro Repos Apps
      - ttf-roboto
    * - Zsh
      - zsh
+   * - Gnome Firmware
+     - gnome-firmware
 
 |nbsp|
 
